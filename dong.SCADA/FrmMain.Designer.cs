@@ -32,13 +32,13 @@
             // 
             // Footer
             // 
-            Footer.Location = new Point(250, 856);
-            Footer.Size = new Size(1385, 56);
+            Footer.Location = new Point(250, 820);
+            Footer.Size = new Size(1385, 92);
             // 
             // Header
             // 
             Header.Location = new Point(250, 0);
-            Header.Size = new Size(1385, 58);
+            Header.Size = new Size(1385, 85);
             // 
             // Aside
             // 

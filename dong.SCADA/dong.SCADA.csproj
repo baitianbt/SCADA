@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AntdUI" Version="1.8.0" />
+    <PackageReference Include="IoTClient" Version="1.0.42" />
+    <PackageReference Include="MiniExcel" Version="1.36.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\dong.BLL\dong.BLL.csproj" />
   </ItemGroup>
 

@@ -8,7 +8,7 @@ namespace dong.SCADA
         {
             InitializeComponent();
 
-           
+
             //设置关联
             uiNavMenu1.TabControl = MainTabControl;
 
@@ -33,7 +33,7 @@ namespace dong.SCADA
 
 
 
-        
+
 
 
         private bool isDragging = false;
@@ -42,9 +42,7 @@ namespace dong.SCADA
         private int minWidth = 200;
         private int minHeight = 150;
 
-
-    
-        private void FrmMain_MouseDown(object sender, MouseEventArgs e)
+        private void Header1_MouseDown(object sender, MouseEventArgs e)
         {
             // 判断是否在右下角进行缩放
             if (e.X >= this.Width - 10 && e.Y >= this.Height - 10)
@@ -58,7 +56,7 @@ namespace dong.SCADA
             }
         }
 
-        private void FrmMain_MouseMove(object sender, MouseEventArgs e)
+        private void Header1_MouseMove(object sender, MouseEventArgs e)
         {
             if (isResizing)
             {
@@ -90,16 +88,42 @@ namespace dong.SCADA
                     this.Cursor = Cursors.Default;   // 默认指针
                 }
             }
-
         }
 
-        private void FrmMain_MouseUp(object sender, MouseEventArgs e)
+        private void Header1_MouseUp(object sender, MouseEventArgs e)
         {
             isDragging = false;
             isResizing = false;
         }
+
+
         #endregion
 
-       
+
+
+        private void uiSymbolLabel2_Click(object sender, EventArgs e)
+        {
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                uiSymbolLabel2.Symbol = 62160;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized; 
+                uiSymbolLabel2.Symbol = 62162; 
+            }
+        }
+
+        private void uiSymbolLabel1_Click(object sender, EventArgs e)
+        {
+            this.Close(); // 关闭窗体
+        }
+
+        private void uiSymbolLabel9_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized; // 最小化窗体
+        }
     }
 }

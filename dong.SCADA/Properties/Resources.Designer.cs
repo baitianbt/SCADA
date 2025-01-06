@@ -73,6 +73,26 @@ namespace dong.SCADA.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap dashboard_180dp_5F6368_FILL0_wght300_GRAD200_opsz48 {
+            get {
+                object obj = ResourceManager.GetObject("dashboard_180dp_5F6368_FILL0_wght300_GRAD200_opsz48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap dashboard_180dp_5F6368_FILL1_wght400_GRAD200_opsz48 {
+            get {
+                object obj = ResourceManager.GetObject("dashboard_180dp_5F6368_FILL1_wght400_GRAD200_opsz48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 产量 {
             get {
                 object obj = ResourceManager.GetObject("产量", resourceCulture);

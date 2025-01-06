@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             uiPanel1 = new Sunny.UI.UIPanel();
-            uiLabel1 = new Sunny.UI.UILabel();
             uiNavMenu1 = new Sunny.UI.UINavMenu();
-            pictureBox1 = new PictureBox();
+            uiSymbolLabel10 = new Sunny.UI.UISymbolLabel();
+            uiLabel1 = new Sunny.UI.UILabel();
             Footer = new Sunny.UI.UIPanel();
             uiSymbolLabel7 = new Sunny.UI.UISymbolLabel();
             uiLine3 = new Sunny.UI.UILine();
@@ -53,16 +52,15 @@
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             Footer.SuspendLayout();
             Header1.SuspendLayout();
             SuspendLayout();
             // 
             // uiPanel1
             // 
-            uiPanel1.Controls.Add(uiLabel1);
             uiPanel1.Controls.Add(uiNavMenu1);
-            uiPanel1.Controls.Add(pictureBox1);
+            uiPanel1.Controls.Add(uiSymbolLabel10);
+            uiPanel1.Controls.Add(uiLabel1);
             uiPanel1.Dock = DockStyle.Left;
             uiPanel1.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
             uiPanel1.Location = new Point(2, 0);
@@ -75,19 +73,6 @@
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uiLabel1
-            // 
-            uiLabel1.BackColor = Color.FromArgb(90, 136, 211);
-            uiLabel1.Dock = DockStyle.Bottom;
-            uiLabel1.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            uiLabel1.ForeColor = Color.White;
-            uiLabel1.Location = new Point(0, 860);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(218, 50);
-            uiLabel1.TabIndex = 2;
-            uiLabel1.Text = "版本：2024.0626.1";
-            uiLabel1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // uiNavMenu1
             // 
@@ -103,7 +88,7 @@
             uiNavMenu1.HoverColor = Color.FromArgb(90, 136, 211);
             uiNavMenu1.ItemHeight = 50;
             uiNavMenu1.LineColor = Color.FromArgb(90, 136, 211);
-            uiNavMenu1.Location = new Point(0, 245);
+            uiNavMenu1.Location = new Point(0, 235);
             uiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             uiNavMenu1.Name = "uiNavMenu1";
             uiNavMenu1.ScrollFillColor = Color.FromArgb(90, 136, 211);
@@ -113,22 +98,37 @@
             uiNavMenu1.ShowLines = false;
             uiNavMenu1.ShowPlusMinus = false;
             uiNavMenu1.ShowRootLines = false;
-            uiNavMenu1.Size = new Size(218, 665);
-            uiNavMenu1.TabIndex = 1;
+            uiNavMenu1.Size = new Size(218, 625);
+            uiNavMenu1.TabIndex = 9;
             uiNavMenu1.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point, 134);
             // 
-            // pictureBox1
+            // uiSymbolLabel10
             // 
-            pictureBox1.BackColor = Color.FromArgb(90, 136, 211);
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Padding = new Padding(3);
-            pictureBox1.Size = new Size(218, 245);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            uiSymbolLabel10.BackColor = Color.FromArgb(90, 136, 211);
+            uiSymbolLabel10.Dock = DockStyle.Top;
+            uiSymbolLabel10.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            uiSymbolLabel10.Location = new Point(0, 0);
+            uiSymbolLabel10.MinimumSize = new Size(1, 1);
+            uiSymbolLabel10.Name = "uiSymbolLabel10";
+            uiSymbolLabel10.Size = new Size(218, 235);
+            uiSymbolLabel10.Symbol = 559505;
+            uiSymbolLabel10.SymbolColor = Color.White;
+            uiSymbolLabel10.SymbolRotate = 10;
+            uiSymbolLabel10.SymbolSize = 128;
+            uiSymbolLabel10.TabIndex = 8;
+            // 
+            // uiLabel1
+            // 
+            uiLabel1.BackColor = Color.FromArgb(90, 136, 211);
+            uiLabel1.Dock = DockStyle.Bottom;
+            uiLabel1.Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            uiLabel1.ForeColor = Color.White;
+            uiLabel1.Location = new Point(0, 860);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(218, 50);
+            uiLabel1.TabIndex = 2;
+            uiLabel1.Text = "版本：2024.0626.1";
+            uiLabel1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Footer
             // 
@@ -405,9 +405,9 @@
             uiLabel4.ForeColor = Color.White;
             uiLabel4.Location = new Point(0, 0);
             uiLabel4.Name = "uiLabel4";
-            uiLabel4.Size = new Size(233, 35);
+            uiLabel4.Size = new Size(185, 35);
             uiLabel4.TabIndex = 5;
-            uiLabel4.Text = "MES-数据信息采集系统";
+            uiLabel4.Text = "通用后台管理系统";
             uiLabel4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // uiSymbolLabel2
@@ -455,6 +455,7 @@
             EscClose = true;
             Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
             FormBorderStyle = FormBorderStyle.None;
+            IconImage = Properties.Resources.dashboard_180dp_5F6368_FILL1_wght400_GRAD200_opsz48;
             Name = "FrmMain";
             Padding = new Padding(2, 0, 2, 2);
             RectColor = Color.Transparent;
@@ -464,7 +465,6 @@
             Text = "Form1";
             ZoomScaleRect = new Rectangle(19, 19, 1461, 677);
             uiPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             Footer.ResumeLayout(false);
             Header1.ResumeLayout(false);
             ResumeLayout(false);
@@ -475,8 +475,6 @@
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel Footer;
         private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UINavMenu uiNavMenu1;
-        private PictureBox pictureBox1;
         private Sunny.UI.UITabControl MainContainer;
         private Sunny.UI.UIPanel Header2;
         private Sunny.UI.UIPanel Header1;
@@ -495,5 +493,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel9;
+        private Sunny.UI.UINavMenu uiNavMenu1;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel10;
     }
 }

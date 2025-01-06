@@ -10,8 +10,10 @@ namespace dong.SCADA
 
 
             //设置关联
-            uiNavMenu1.TabControl = MainTabControl;
-
+        
+            this.MainTabControl = MainContainer;
+           
+            uiNavMenu1.TabControl = MainContainer ;
             //设置初始页面索引（关联页面，唯一不重复即可）
             int pageIndex = 1000;
 

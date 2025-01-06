@@ -53,6 +53,7 @@ namespace dong.SCADA.UserControls
         }
 
         private string openVariableName = "";
+
         [Browsable(true)]//使属性可以暴露出来，显示到窗口中
         [Category("自定义属性")]//自定义属性
         [Description("获取变量名称")]
@@ -65,6 +66,7 @@ namespace dong.SCADA.UserControls
 
 
         private string closeVariableName = "";
+
         [Browsable(true)]//使属性可以暴露出来，显示到窗口中
         [Category("自定义属性")]//自定义属性
         [Description("获取变量名称")]

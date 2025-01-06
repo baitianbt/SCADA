@@ -41,7 +41,6 @@
             uiLine1 = new Sunny.UI.UILine();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiLabel3 = new Sunny.UI.UILabel();
-            MainContainer = new Sunny.UI.UITabControl();
             Header2 = new Sunny.UI.UIPanel();
             Header1 = new Sunny.UI.UIPanel();
             uiLabel2 = new Sunny.UI.UILabel();
@@ -51,6 +50,7 @@
             uiLabel4 = new Sunny.UI.UILabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
+            MainContainer = new Sunny.UI.UITabControl();
             uiPanel1.SuspendLayout();
             Footer.SuspendLayout();
             Header1.SuspendLayout();
@@ -279,25 +279,6 @@
             uiLabel3.Text = "2025/01/04 12:00:00";
             uiLabel3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // MainContainer
-            // 
-            MainContainer.Dock = DockStyle.Fill;
-            MainContainer.DrawMode = TabDrawMode.OwnerDrawFixed;
-            MainContainer.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            MainContainer.ItemSize = new Size(0, 1);
-            MainContainer.Location = new Point(2, 0);
-            MainContainer.MainPage = "";
-            MainContainer.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
-            MainContainer.Name = "MainContainer";
-            MainContainer.SelectedIndex = 0;
-            MainContainer.Size = new Size(1631, 910);
-            MainContainer.SizeMode = TabSizeMode.Fixed;
-            MainContainer.TabBackColor = Color.FromArgb(243, 249, 255);
-            MainContainer.TabIndex = 4;
-            MainContainer.TabUnSelectedForeColor = Color.FromArgb(240, 240, 240);
-            MainContainer.TabVisible = false;
-            MainContainer.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            // 
             // Header2
             // 
             Header2.Dock = DockStyle.Top;
@@ -440,6 +421,25 @@
             uiSymbolLabel1.TabIndex = 0;
             uiSymbolLabel1.Click += uiSymbolLabel1_Click;
             // 
+            // MainContainer
+            // 
+            MainContainer.Dock = DockStyle.Fill;
+            MainContainer.DrawMode = TabDrawMode.OwnerDrawFixed;
+            MainContainer.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            MainContainer.ItemSize = new Size(0, 1);
+            MainContainer.Location = new Point(220, 85);
+            MainContainer.MainPage = "";
+            MainContainer.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
+            MainContainer.Name = "MainContainer";
+            MainContainer.SelectedIndex = 0;
+            MainContainer.Size = new Size(1413, 790);
+            MainContainer.SizeMode = TabSizeMode.Fixed;
+            MainContainer.TabBackColor = Color.FromArgb(243, 249, 255);
+            MainContainer.TabIndex = 5;
+            MainContainer.TabUnSelectedForeColor = Color.FromArgb(240, 240, 240);
+            MainContainer.TabVisible = false;
+            MainContainer.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            // 
             // FrmMain
             // 
             AllowShowTitle = false;
@@ -447,11 +447,11 @@
             BackColor = Color.FromArgb(90, 136, 211);
             ClientSize = new Size(1635, 912);
             CloseAskString = "是否关闭系统";
+            Controls.Add(MainContainer);
             Controls.Add(Header2);
             Controls.Add(Footer);
             Controls.Add(Header1);
             Controls.Add(uiPanel1);
-            Controls.Add(MainContainer);
             EscClose = true;
             Font = new Font("微软雅黑", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
             FormBorderStyle = FormBorderStyle.None;
@@ -475,7 +475,6 @@
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel Footer;
         private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UITabControl MainContainer;
         private Sunny.UI.UIPanel Header2;
         private Sunny.UI.UIPanel Header1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
@@ -495,5 +494,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel9;
         private Sunny.UI.UINavMenu uiNavMenu1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel10;
+        private Sunny.UI.UITabControl MainContainer;
     }
 }

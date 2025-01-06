@@ -33,7 +33,7 @@
             // PageAuthManage
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1140, 667);
             Name = "PageAuthManage";
             Symbol = 362722;
             Text = "权限管理";

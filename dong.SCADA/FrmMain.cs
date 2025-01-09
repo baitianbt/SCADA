@@ -1,3 +1,4 @@
+using dong.SCADA.Page;
 using Sunny.UI;
 
 namespace dong.SCADA
@@ -17,6 +18,8 @@ namespace dong.SCADA
             //设置初始页面索引（关联页面，唯一不重复即可）
             int pageIndex = 1000;
 
+
+            uiNavMenu1.CreateNode(AddPage(new PageHome(), ++pageIndex));
             TreeNode parent = uiNavMenu1.CreateNode("监控模块", 61451, 24, pageIndex);
 
             uiNavMenu1.CreateChildNode(parent, AddPage(new PageEquipmentMonitor(), ++pageIndex));
